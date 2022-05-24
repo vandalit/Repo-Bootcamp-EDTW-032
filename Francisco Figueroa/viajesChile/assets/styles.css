@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* Reseteando propiedades de margin y padding a 0, color para la fuente y fuente requerida */
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+/* Smooth Scroll */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Color de fondo del body */
+body{
+    background-color: #000;
+}
+
+/* Tamaño del logo */
+.logo{
+    width: 70px;
+    height: 50px;
+}
+
+/* Propiedad para que el fondo del navbar sea el mismo carrousel */
+.barra{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    
+}
+
+/* Propiedad para montar el carrousel como fondo del navbar */
+.carousel{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    
+}
+
+/* Tamaño de las imagenes en el carrousel */
+.imagenCarousel{
+    width: 100%;
+    height: 800px;
+}
+/* Margin entre carrousel y el contenido que le sigue */
+.info{
+    margin-top: 50px;
+}
+/* Alineando el h1 ¿Quienes somos? y dandole margen respecto a la info de abajo */
+.info h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Grid de 3 columnas para la info */
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 16px;
+    margin-top: 30px;
+}
+/* Color de fondo de los iconos */
+.ref{
+    text-align: center;
+    background-color: #00b7ff;
+    padding: 5px;
+}
+/* Margin con respecto a la info anterios */
+.destacados{
+    margin-top: 50px;
+}
+
+/* Alineando el h1 Destacados y dandole margen respecto a la info de abajo */
+.destacados h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Grilla para las card */
+.grilla-destacados{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 16px;
+}
+/* Set de el tamaño de las img para todas las cards */
+.card-img-top{
+    height: 200px;
+
+}
+/* Color de fondo del body de las cards */
+.card-body{
+    background-color: #00b7ff;
+}
+
+.formulario{
+    margin-top: 50px;
+    
+}
+.formulario h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.formulario input{
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+}
+.formulario textarea{
+    width: 100%;
+    height: 200px;
+    color: black;
+}
+
+.formulario button{
+    background-color: #00b7ff;
+    width: 100px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.piePagina{
+    background-color: #00b7ff;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .grilla{
+        grid-template-columns: 1fr;
+    }
+
+    .grilla div{
+        margin-bottom: 25px;
+    }
+
+    .carousel{
+        height: 500px;
+    }
+    .imagenCarousel{
+        height: 500px;
+    }
+
+    .grilla-destacados{
+        grid-template-columns: 1fr;
+    }
+}
