@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: font-family 'Cabin', sans-serif;;
+}
+
+#logo{
+    font-family: Lobster, Regular;
+    font-size: 37px;
+    margin-top: 7px ;
+    margin-left: 150px;
+}
+
+#lista{
+    font-size: 19px;
+    color: #ffff;
+    margin-right: 154px;
+    margin-top: 21px;
+}
+
+.pizza-texto{
+    display: flex;
+    align-items: center;
+}
+
+.pizza-texto img{
+    height: 384px;
+    width: 425px;
+    margin-left: 150px;
+    margin-top: 24px;
+}
+
+.texto{
+    font-weight: bold;
+    margin-left: 19px;
+}
+
+.texto h1{
+    height: 201px;
+    width: 425px;
+}
+
+.slider-1{
+    margin-left: 150px;
+    margin-top: 68px;
+    margin-top: 68px;
+}
+
+.slider-1 img{
+    padding-left: 16px;
+    width: 233px 
+}
+
+.slider-2{
+    margin-left: 150px;
+    margin-top: 68px;
+    margin-top: 68px;
+}
+
+.slider-2 img{
+    padding-left: 16px;
+    width: 233px 
+}
+
+.recetas{
+    display: flex;
+    margin-left: 150px;
+    margin-top: 29.16px;
+    margin-right: 154px;
+    padding-top: 29.16px;
+    padding-bottom: 100px;
+    border-top: solid; 
+    border-bottom: solid;
+}
+
+.titulos-recetas-1{
+    width: 482px;
+}
+
+.titulos-recetas-2{
+    width: 482px;
+}
+
+
+
+
+@media only screen and (min-width: 200px) and (max-width: 768px) {
+    #logo{
+        margin-left: 37px;
+    }
+}
+
+
+
+
