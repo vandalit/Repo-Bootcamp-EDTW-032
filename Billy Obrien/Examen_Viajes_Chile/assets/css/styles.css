@@ -1,0 +1,62 @@
+/*Se esta ocupando la version 5.2 */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    z-index: 1;
+}
+header{
+    position: fixed;
+    z-index: 100;
+    min-width: 100%;
+}
+.colorscroll{
+    background-color: black !important;
+    transition: background-color 400ms linear;
+}
+main{
+    background-color: black;
+}
+#BarraNav{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#BarraNav a{
+    color: white;
+}
+#Carrusel{
+    top:0px;
+}
+.colortema{
+    background-color: #0DCAF0;
+}
+i{
+    font-size: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+#somos{
+    padding: 1% 7% 1% 7%;
+    z-index: 1;
+}
+#destacados{
+    padding: 1% 7% 3% 7%;
+    z-index: 1;
+}
+#contacto{
+    padding: 1% 7% 3% 7%;
+    z-index: 1;
+}
+footer{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#carrusel{
+    height: auto;
+}
+@media (max-width: 992px) {
+    #somos{
+        display: none;
+    }
+}
