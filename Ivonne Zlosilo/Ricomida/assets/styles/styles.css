@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Cabin', sans-serif;
+}
+#logotipo{
+    font-family: 'Lobster', cursive;
+    font-size: 37px;
+    font-weight: bold;
+    margin-left: 150px;
+}
+#logotipo2{
+    font-family: 'Lobster', cursive;
+    font-size: 37px;
+    font-weight: bold;
+}
+.borde-externo{
+    padding-left:  9.5%;
+    padding-right: 9.5%;
+}
+.items-barra{
+    margin-left: auto; /* ms-auto*/
+    margin-right: 154px; /* me-5*/
+}
+.texto-imagen{
+    display: flex; /*d-flex*/
+    align-items: center; /* align-items-center*/
+    width: 79%; /*  margin-left: 150px;margen a la izquierda equivale tambien a with o ancho + margen automatico para correr la imagen*/
+    margin: auto;
+    margin-top: 24px; /*espacio hacia arriva de la imagen*/
+    gap: 16px; /*equivale a gap-3 en html*/
+}
+.texto-imagen img{
+    width: 482px;
+    height: 384px;
+}
+.texto{
+    font-weight: bold; /*fw-bold*/
+}
+.texto h1{
+    width: 425px;
+    height: 201px;
+}
+.suscribir{
+    text-align: center;
+    color: white;
+    background-color: #DC3545;
+    padding-top: 12%;
+    padding-bottom: 12%;
+}
+footer{
+    text-align: center;
+    background-color: #373A3C;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+/* esto es semenjante a responsive de boostrap es para regular el ancho de pantallas para celulares, viene con with de 360 px, pero se recomienda poner 200px porque existen celulares más pequeños.El ancho de pantalla se va a aplicar desde 200 hasta 768 fuera de esos valores se aplica el general, puesto arriba */
+@media only screen and (min-width: 200px) and (max-width: 768px){
+	#logotipo{
+        margin-left: 37px
+    }
+    .texto-imagen{
+        flex-direction: column; /* lo adapta en columna hacia abajo imagen,luego texto*/
+        width: 80%; /*w-75*/
+        margin: auto; /*m-auto*/
+        margin-top: 38px;  /* margen superior*/
+    }
+    .texto-imagen img{
+        width: 246px;  /*medida para celular*/
+        height: 195px;
+    }
+    .texto h1{
+        width: 247px;
+        height: 126px;
+    }
+}

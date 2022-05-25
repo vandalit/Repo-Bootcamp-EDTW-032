@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/styles.css"> <!--siempre primero boostract y luego css-->
+  <title>Ricomida</title>
+</head>
+<body>
+    <!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!--navbar-dark es una propiedad que hace que las letras se vean claras cuando esta Bd-dark (backdrom negro)-->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" id="logotipo">Ricomida</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav items-barra">  <!--ms-auto= margin start automatico lo pone a la derecha me-auto=margen end, se va hacia la izquierda ms-auto me-auto=al centro, me-5 equibave a una marge pequeno va del 1 al 5 se puede colocar en css como margin left-->
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Recetas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--final navbar-->
+  <!--inicio sección cabecera de pantalla-->
+    <!--para agregar comentarios toogle aline comments-->
+  <section>
+    <div class="texto-imagen">  <!-- aquí se puede utilizar d-flex ms-5 align-items-center y gap-3 para alinear imagen con texto o puede hacerce en css-->
+      <img src="./img/principal.jpg" alt="Imagen de pizza"> <!--se puede aquí colocar class= "h-25 w-25" para ubicar correctamente inagen o en css sección-->
+      <!--fw-bold=negrita font weitgh-->
+      <div class="texto">  <!-- en div clase="w-25 fw-bold" negrita o en css como clase texto-->
+        <h1>PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES</h1>
+        <hr>
+        <p>110 MIN / 6 A 8 PORCIONES</p> 
+        <button id="boton_enviar_correo" type="button" class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+        data-bs-custom-class="custom-tooltip"
+        title="Presiona para enviar a tu correo.">Enviar por correo</button>
+        <button id="favoritos" type="button" class="btn btn-outline-dark" data-bs-toggle="tooltip" data-bs-placement="right"
+        data-bs-custom-class="custom-tooltip"
+        title="Agrega esta receta a tus favoritos.">Añadir a favoritos</button>        
+      </div>    
+    </div>
+  </section>  
+  <!--final sección-->
+  <!--inicio carrusel-->
+  <section class="container-fluid d-none d-lg-block borde-externo" style="margin-top: 50px;"> <!--d=mostrar equivalente display, none=nada o no, lg=large, largo o grande. asi que d-none es no mostrar y d-lg-block es mostrar en bloque cuando la pantalla sea grande-->
+    <div id="carouselExampleIndicators" class="carousel slide position-relative" data-bs-ride="true">
+      <div class="carousel-indicators position-absolute top-100 start-0 traslate-middle m-0 p-0">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-dark" aria-current="true" aria-label="Slide 1" style="width: 16px; height:16px; border-radius: 50%;"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-dark" aria-label="Slide 2" style="width: 16px; height: 16px; border-radius: 50%;"></button>
+      </div>
+      <div class="carousel-inner" style="margin-left:0.75rem ; margin-right: 0.75rem">
+        <div class="carousel-item active m-0 p-0">
+          <img src="./img/slider-1.png" class="d-inline" alt="CHAMPIÑONES." style="width: 24.4%;">
+          <img src="./img/slider-2.png" class="d-inline" alt="pizza al horno." style="width: 24.4%;">
+          <img src="./img/slider-3.png" class="d-inline" alt="Masa de pizza." style="width: 24.4%;">
+          <img src="./img/slider-4.png" class="d-inline" alt="relleno de pizza." style="width: 24.4%;">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/slider-5.png" class="d-inline" alt="dividir" style="width: 24.4%;">
+          <img src="./img/slider-6.png" class="d-inline" alt="ingrediente" style="width: 24.4%;">
+          <img src="./img/slider-7.png" class="d-inline" alt="servir" style="width: 24.4%;">
+          <img src="./img/slider-8.png" class="d-inline" alt="preparado" style="width: 24.4%;">
+        </div>
+      </div>
+    </div>
+    <br id="separador2">
+    <hr id="separador2"> 
+  </section>      
+  <!--final carrusel-->
+  <!-- explicación de receta -->
+  <div class="container-fluid borde-externo" id="reseta">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <p id="ingredientes"><u>INGREDIENTES</u></p>
+        <P>Masa</P>
+        <p>20gr de levadura seca instantánea <br>1 cucharadita de azúcar <br>500 ml agua tibia 100 ml aceite vegetal <br>4 cucharadas de aceite de oliva <br>65 gr harina de maíz fina (chuchoca) <br>2 cucharaditas de sal <br>625 gr harina</p>
+        <p>Salsa</p>
+        <p>5 cucharadas de aceite de oliva <br>½ cebolla picada en cubos finos <br>2 cucharaditas de sal <br>3 cucharadas de Orégano Gourmet <br>1 ½ cucharadas de Albahaca Gourmet <br>2 tarro de tomates en cubos al natural <br>2 cucharaditas de azúcar</p>
+        <p>Relleno <br>½ cebolla, en cubos <br>500 gr hojas de espinacas picadas <br>400 gr de champiñones, laminados <br>300 gr de queso mozarella. <br>4 cucharadas queso parmesano</p>
+      </div>
+      <div class="col-12 col-lg-6">
+        <p id="Preparación"><u>PREPARACIÓN</u></p>
+        <P>1. Para la masa, disolver la levadura y el azúcar en agua tibia en un bol grande. Dejar reposar 2 minutos. Agregar el aceite, la harina de maíz, sal y 400gr de harina. Mezclar bien. Amasar y agregar el resto de harina, la cantidad necesaria para tener una masa blanda. Poner en el mesón y amasar por 5 minutos o hasta tener una masa lisa y elástica (agregar harina en el mesón a medida que se va amasando para que la masa no se pegue) . Poner la masa en un bol aceitado, tapar con un paño de cocina limpio y dejar reposar hasta que la masa duplique su volumen (leudar). Golpear la masa para que baje y luego dejar leudar por 40 minutos adicionales.</P>
+        <P>2. Mientras tanto preparar la salsa: Calentar 4 cucharadas de aceite en una olla a fuego medio. Agregar la cebolla, Orégano Gourmet, Albahaca Gourmet, sal y cocinar hasta que la cebolla esté dorada. Agregar el ajo y cocinar por 30 segundos. Agregar los tomates junto al jugo del tarro, a la mezcla de cebolla. Agregar el azúcar y cocinar hasta que la mezcla se haya reducido y espesado, como 30 minutos. Sazonar con sal y pimienta a gusto. Reservar.</P>
+        <P>3. Relleno: Cocinar las chalotas en el aceite de oliva hasta que estén transparentes. Agregar los champiñones y las espinacas, cocinar hasta que estén cocidos y se haya evaporado todo el líquido que hayan votado los vegetales. Reservar.</P> 
+        <P>4. Calentar el horno a 220C.</P> 
+        <P>5. Una vez que la masa haya reposado, dividirla en dos bolas. Estirar cada masa para cubrir dos moldes (desmontables) de 26 cm, hacer un borde de 5 cm con la masa. Dividir el relleno entre las dos pizza, tapar con el queso mozarella, luego terminar con la salsa de tomates y finalmente espolvorear el queso rallado. 6. Hornear por 35 a 40 minutos o hasta que el relleno esté caliente y la base esté esponjosa y dorada. Esperar unos minutos antes de desmoldar.</P>
+      </div>
+    </div>
+  </div>
+  <!-- termino explicación receta -->
+  <hr id="separador3">
+  <!-- inicio muestra otras recetas  -->
+  <section class="container-fluid borde-externo">
+    <div class="row">
+      <div class="col">
+        <h1 style="text-align: center;">RECETAS RELACIONADAS</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-4">
+        <div class="card" style="width: 18rem; height: 100%;">
+          <img src="./img/recipe-card-1.png" class="card-img-top" alt="PANQUEQUES CON MANJAR Y CREMA.">
+          <div class="card-body">
+            <h3>PANQUEQUES CON MANJAR Y CREMA</h3>
+            <p class="card-text">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="card" style="width: 18rem; height: 100%;">
+          <img src="./img/recipe-card-2.png" class="card-img-top" alt="TIRAMISÚ.">
+          <div class="card-body">
+            <h3>TIRAMISÚ</h3>
+            <p class="card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="card" style="width: 18rem; height: 100%;">
+          <img src="./img/recipe-card-3.png" class="card-img-top" alt="PLATEADA.">
+          <div class="card-body">
+            <h3>PLATEADA</h3>
+            <p class="card-text">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac eleifend risus, urna auctor inceptos mattis dapibus.</p>
+          </div>
+        </div>
+      </div>
+    </div>      
+  </section>
+  <!-- termino muestra otras recetas--> 
+  <!-- inicio seccion de suscribir-->
+  <section class="suscribir">
+    <h1>SUSCRÍBETE EN NUESTRO NEWSLETTER</h1>
+    <h3>y obtén las mejores recetas que tenemos en <span id="logotipo2">Ricomida</span></h3>
+    <button type="button" style="border-color: white; width: 233px;" class="btn btn-danger">Empezar</button>
+  </section> 
+  <!-- fin seccion de suscribir--> 
+  <!-- comienza footer--> 
+  <footer>
+    <H1 id="logotipo2">Ricomida</H1>
+  </footer>
+  <!--siempre primero js de boostras y despues los otros js-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>
