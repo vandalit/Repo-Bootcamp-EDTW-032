@@ -5,13 +5,13 @@
 def get_rid_of_surrounding_whitespaces(a_string)
   # TODO: return a copy of the string with leading and trailing whitespaces removed
   # example: get_rid_of_surrounding_whitespaces("  hey yo  ") => "hey yo"
-  
+  return a_string.strip
 end
 
-def pertenece_esta_cuestion?(a_string, a_word)
+def belongs_to?(a_string, a_word)
   # TODO: return true if a_string contains a_word
   # example: belongs_to?("hey jude", "jude") => true
-  return a_string.include?(a_word)
+  
 end
 
 def replace(initial_string, old_letter, new_letter)
@@ -50,7 +50,7 @@ def ascending_order(an_array)
   
 end
 
-puts "aqui comenzamos"
+puts "..."
 puts "  hola como estas?   "
-puts get_rid_of_surrounding_whitespaces("  hola como estas?   ") #ejemplo de como se llama a un metodo
-puts "fin"
+puts get_rid_of_surrounding_whitespaces("  hola como estas?  ") #ejemplo de como se llama a un metodo
+puts "..."
