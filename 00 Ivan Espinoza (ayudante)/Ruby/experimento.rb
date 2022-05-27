@@ -7,12 +7,12 @@
     return a_string.strip
   end
   
-def belongs_to?(a_string, a_word)
-# TODO: return true if a_string contains a_word
-# example: belongs_to?("hey jude", "jude") => true
-return a_string.include?(a_word)
-end
-
+  def belongs_to?(a_string, a_word)
+    # TODO: return true if a_string contains a_word
+    # example: belongs_to?("hey jude", "jude") => true
+    return a_string.include?(a_word)
+  end
+  
   def replace(initial_string, old_letter, new_letter)
     # TODO: return a copy of the string with the new letter replacing the old one
     # example: replace("casanova", "a", "o") => "cosonovo"
