@@ -1,0 +1,7 @@
+mi dislexia me traiciono
+originalmente la repo fue llamada 023, por error
+la repo en github ha sido renombrada a 032, 
+al aprecer no hay conflicto alguno ya que es gestionado por el .git
+pero pero pero ...
+quienes ya han clonado la repo localmente, quizás deban renombrar la carpeta manualmente
+sigue sin genear conflictos, el push de este txt es evidencia de ello.
