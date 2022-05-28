@@ -5,3 +5,7 @@ al aprecer no hay conflicto alguno ya que es gestionado por el .git
 pero pero pero ...
 quienes ya han clonado la repo localmente, quizás deban renombrar la carpeta manualmente
 sigue sin genear conflictos, el push de este txt es evidencia de ello.
+--------------------
+update
+si también tiene github desktop, el cambio de nombre les puede romper la ruta
+solo deben relocalizar la carpeta y se soluciona. 
