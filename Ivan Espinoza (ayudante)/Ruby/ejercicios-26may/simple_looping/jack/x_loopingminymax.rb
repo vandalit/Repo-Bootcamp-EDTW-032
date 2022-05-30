@@ -2,8 +2,9 @@
 #metodo
 def acumulando(inicio,final) 
     acumulador = 0
-    for gatitos in inicio..final do
-        acumulador = (acumulador + gatitos)
+    for contador in inicio..final do
+        acumulador = (acumulador + contador) #memoria
+        #puts acumulador #pueden descomentar esta linea para ver como se va acumulando en cada vuelta el total.
     end
     return acumulador
 end
